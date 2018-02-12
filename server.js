@@ -9,7 +9,7 @@ server.use(bodyParser.json());
 server.use(cors());
 
 server.get('/', (req, res) => {
-    res.send('Hello World from hi ${port}')
+    res.send('Hello World from ${port}')
 });
 server.post('/payload', (req, res) => {
     console.log(req.body);
